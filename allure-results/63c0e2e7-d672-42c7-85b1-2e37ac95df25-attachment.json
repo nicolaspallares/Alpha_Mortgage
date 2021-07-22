@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//label[contains(.,\"[object Object],[object Object],[object Object],[object Object]\")]"
+}

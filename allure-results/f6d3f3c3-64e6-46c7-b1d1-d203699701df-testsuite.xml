@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1626484678184' stop='1626484681311'>
+    <name>Create a basic transaction</name>
+    <title>Create a basic transaction</title>
+    <test-cases>
+        <test-case start='1626484678185' status='failed' stop='1626484681310'>
+            <name>Should fill first page</name>
+            <title>Should fill first page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.164'/>
+            </parameters>
+            <steps>
+                <step start='1626484678187' status='passed' stop='1626484680885'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='6359dc68-b2db-4e5c-9a2e-ab94a059bb10-attachment.json' type='application/json' size='134'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1626484680886' status='passed' stop='1626484680900'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e2c74799-7020-4d71-ba5a-94595048e88d-attachment.json' type='application/json' size='70'/>
+                        <attachment title='Response' source='de5e63b4-525e-44c5-9339-65d8e55e98fb-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1626484680906' status='failed' stop='1626484681310'>
+                    <name>POST /session/:sessionId/element/dfa7a880-c4aa-40dd-b93a-90e79d898dff/click</name>
+                    <title>POST /session/:sessionId/element/dfa7a880-c4aa-40dd-b93a-90e79d898dff/click</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626484680964' status='passed' stop='1626484681306'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='ee54196f-f7e0-4101-ae30-837785a3b107-attachment.png' type='image/png' size='70112'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable: element not interactable
+                  (Session info: chrome=91.0.4472.164)      
+                      actual expected
+                      
+                      ''
+                      </message>
+                <stack-trace>element not interactable
+                  (Session info: chrome=91.0.4472.164)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at UserContext.&lt;anonymous> (/Users/npallares/Desktop/trainings/alphaMortgage/test/specs/transaction.spec.js:12:44)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

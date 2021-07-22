@@ -1,0 +1,75 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1626796614870' stop='1626796617273'>
+    <name>Create a basic transaction</name>
+    <title>Create a basic transaction</title>
+    <test-cases>
+        <test-case start='1626796614870' status='failed' stop='1626796617273'>
+            <name>Should fill first page</name>
+            <title>Should fill first page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.164'/>
+            </parameters>
+            <steps>
+                <step start='1626796614873' status='passed' stop='1626796615019'>
+                    <name>POST /session/:sessionId/window/rect</name>
+                    <title>POST /session/:sessionId/window/rect</title>
+                    <attachments>
+                        <attachment title='Request' source='a120e3f9-0864-476e-8fa4-9cc2b9f034e0-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='62fbda26-66b6-4c5a-9fcb-5e0875b89211-attachment.json' type='application/json' size='62'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1626796615020' status='passed' stop='1626796616989'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='9ace80c7-879d-454c-a545-15799f0f1ee0-attachment.json' type='application/json' size='134'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1626796616990' status='passed' stop='1626796617025'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='38c2b219-2127-4a5d-80ca-199ff0cd11a6-attachment.json' type='application/json' size='70'/>
+                        <attachment title='Response' source='907e395d-9da2-4c6c-afdf-90bde412ccf1-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1626796617031' status='failed' stop='1626796617272'>
+                    <name>POST /session/:sessionId/element/5e7d679e-4baf-4321-9963-f098ad3e49f0/click</name>
+                    <title>POST /session/:sessionId/element/5e7d679e-4baf-4321-9963-f098ad3e49f0/click</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1626796617071' status='passed' stop='1626796617270'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='82068a63-72fa-4182-a3b4-b25a6e67f9b5-attachment.png' type='image/png' size='31735'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable: element not interactable
+                  (Session info: chrome=91.0.4472.164)      
+                      actual expected
+                      
+                      ''
+                      </message>
+                <stack-trace>element not interactable
+                  (Session info: chrome=91.0.4472.164)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at UserContext.&lt;anonymous> (/Users/npallares/Desktop/trainings/alphaMortgage/test/specs/transaction.spec.js:12:44)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
