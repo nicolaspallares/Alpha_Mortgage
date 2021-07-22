@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//*[@for=\"month_1\"]"
-}
